@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: abcd;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  padding: 100px;
+  background-color: grey;
+}
+.hero1 {
+  width: 30vw;
+  height: 30vw;
+  filter: blur(20px);
+  border-radius: 50%;
+  background-color: rgb(76, 54, 54);
+  position: absolute;
+}
+.hero2 {
+  width: 30vw;
+  height: 30vw;
+  filter: blur(20px);
+  border-radius: 50%;
+  position: absolute;
+  animation: anima 1s linear 1s infinite alternate;
+  background-color: rgb(76, 54, 54);
+}
+@keyframes anima {
+  from {
+    transform: translate(-20%, -20%);
+  }
+  to {
+    transform: translate(20%, 20%);
+  }
+}
