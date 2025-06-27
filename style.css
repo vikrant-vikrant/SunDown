@@ -1,6 +1,6 @@
 @font-face {
   font-family: abcd;
-  src: url(./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
+  src: url(./NeueHaasDisplayMediu.ttf);
 }
 
 * {
@@ -12,8 +12,6 @@
 html,
 body {
   height: 100%;
-
-  
   width: 100%;
 }
 .page1 {
@@ -101,7 +99,7 @@ nav {
   background-color: #e12c0a;
   position: absolute;
   right: 0;
-  top: 80%;
+  /* top: 80%; */
   filter: blur(20px);
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -110,16 +108,16 @@ nav {
 .hero-design .hero2 {
   height: 25vw;
   width: 25vw;
-  background-color: #e12c0a;
+  background-color: #fe330a;
   position: absolute;
   right: 0;
   border-radius: 50%;
-  filter: blur(20px);
+  filter: blur(30px);
   animation: anima 3s linear infinite alternate;
 }
 .hero-design .hero22 {
   right: 35%;
-  animation: anima 5s linear infinite alternate-reverse;
+  animation: anima 6s linear infinite alternate-reverse;
 }
 @keyframes anima {
   from {
@@ -128,4 +126,42 @@ nav {
   to {
     transform: translate(-20%, 0);
   }
+}
+.page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  padding: 8vw 0;
+}
+.moving-text {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.moving-text::-webkit-scrollbar {
+  display: none;
+}
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  animation: movetext 12s linear infinite;
+}
+@keyframes movetext {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.moving-text h1 {
+  font-size: 9vw;
+  display: inline-block;
+}
+.dot {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #fe330a;
+  display: inline-block;
+  margin: 1vw 2vw;
 }
