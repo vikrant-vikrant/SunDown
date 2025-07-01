@@ -2,6 +2,11 @@
   font-family: abcd;
   src: url(./NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+  font-family: abcd;
+  font-weight: 100;
+  src: url(./NeueHaasDisplayLight.ttf);
+}
 
 * {
   margin: 0;
@@ -121,10 +126,10 @@ nav {
 }
 @keyframes anima {
   from {
-    transform: translate(0%, -20%);
+    transform: translate(0%, -30%)skew(0);
   }
   to {
-    transform: translate(-20%, 0);
+    transform: translate(-20%, 0)skew(-20deg);
   }
 }
 .page2 {
@@ -132,6 +137,7 @@ nav {
   width: 100%;
   background-color: #efeae3;
   padding: 8vw 0;
+  position: relative;
 }
 .moving-text {
   white-space: nowrap;
@@ -164,4 +170,49 @@ nav {
   background-color: #fe330a;
   display: inline-block;
   margin: 1vw 2vw;
+}
+.page2-bottom {
+  height: 80vh;
+  width: 100%;
+  padding: 5vw;
+  margin-top: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9;
+  position: relative;
+}
+.page2-bottom h1 {
+  font-size: 4vw;
+  font-weight: bold;
+  width: 60%;
+  line-height: 5vw;
+}
+.bottom-part2 {
+  width: 20%;
+  margin-top: 15vw;
+}
+.bottom-part2 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.bottom-part2 p {
+  margin-top: 2vw;
+  font-weight: 100;
+}
+.page2 .gooey {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #fe320a, #fe5b0a);
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  filter: blur(30px);
+  animation: anima 6s ease-in-out infinite alternate-reverse;
+}
+.page3{
+  height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
 }
