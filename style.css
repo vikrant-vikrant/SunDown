@@ -1,11 +1,11 @@
 @font-face {
   font-family: abcd;
-  src: url(./NeueHaasDisplayMediu.ttf);
+  src: url(./public/font/NeueHaasDisplayMediu.ttf);
 }
 @font-face {
   font-family: abcd;
   font-weight: 100;
-  src: url(./NeueHaasDisplayLight.ttf);
+  src: url(./public/font//NeueHaasDisplayLight.ttf);
 }
 
 * {
@@ -126,10 +126,10 @@ nav {
 }
 @keyframes anima {
   from {
-    transform: translate(0%, -30%)skew(0);
+    transform: translate(0%, -30%) skew(0);
   }
   to {
-    transform: translate(-20%, 0)skew(-20deg);
+    transform: translate(-20%, 0) skew(-20deg);
   }
 }
 .page2 {
@@ -175,7 +175,6 @@ nav {
   height: 80vh;
   width: 100%;
   padding: 5vw;
-  margin-top: 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -211,8 +210,37 @@ nav {
   filter: blur(30px);
   animation: anima 6s ease-in-out infinite alternate-reverse;
 }
-.page3{
-  height: 100vh;
+.page3 {
+  min-height: 100vh;
   width: 100%;
   background-color: #efeae3;
+  padding: 3vw 0;
+}
+.elem {
+  height: 100px;
+  width: 100%;
+  border-bottom: 1.5px solid rgba(132, 132, 132, 0.345);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  overflow: hidden;
+}
+
+.elem h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+.elem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  transition: all ease 0.2s;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+.elem:hover .overlay {
+  top: 0;
 }
