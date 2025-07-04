@@ -19,6 +19,11 @@ body {
   height: 100%;
   width: 100%;
 }
+.main {
+  /* background-color: black; */
+  z-index: 20;
+  position: relative;
+}
 .page1 {
   min-height: 100vh;
   width: 100%;
@@ -118,11 +123,11 @@ nav {
   right: 0;
   border-radius: 50%;
   filter: blur(30px);
-  animation: anima 3s linear infinite alternate;
+  animation: anima 2s linear infinite alternate;
 }
 .hero-design .hero22 {
   right: 35%;
-  animation: anima 6s linear infinite alternate-reverse;
+  animation: anima 5s linear infinite alternate-reverse;
 }
 @keyframes anima {
   from {
@@ -245,9 +250,42 @@ nav {
 .elem:hover .overlay {
   top: 0;
 }
+.all-project {
+  margin: 5rem 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #0000006c;
+  border-radius: 50px;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.all-project::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50px;
+  transition: all ease 0.4s;
+}
+.all-project:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+.all-project a {
+  text-decoration: none;
+  color: #000000bb;
+  z-index: 9;
+  position: relative;
+}
+.all-project:hover a {
+  color: #fff;
+}
 
-
-.fixed-img{
+.fixed-img {
   height: 30vw;
   width: 24vw;
   border-radius: 10px;
@@ -258,4 +296,58 @@ nav {
   display: none;
   background-size: cover;
   background-position: center;
+  transition: all ease 0.5s;
+}
+.page4 {
+  /* height: 100vh; */
+  /* width: 100%; */
+  background-color: #efeae3;
+  padding: 3vw 2vw;
+}
+.page4 .container {
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  border-radius: 25px;
+}
+.page4 .left {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page4 .left div {
+  width: 45%;
+}
+.page4 .left div h1 {
+  color: #504a45;
+  font-size: 4vw;
+  font-weight: 400;
+}
+.page4 .left div p {
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  z-index: 9;
+  height: 60vh;
+  bottom: 0;
+  color: rgb(217, 217, 217);
+  font-size: 23vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.footer-div {
+  height: 20vh;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  top: 2rem;
 }
