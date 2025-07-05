@@ -223,7 +223,7 @@ nav {
   /* margin-bottom: 15vw; */
 }
 .elem {
-  height: 100px;
+  height: 7vw;
   width: 100%;
   border-bottom: 1.5px solid rgba(132, 132, 132, 0.345);
   position: relative;
@@ -305,7 +305,7 @@ nav {
   padding: 3vw 2vw;
 }
 .page4 .container {
-  background-color: #000;
+  background-color: #323232;
   height: 100vh;
   width: 100%;
   border-radius: 25px;
@@ -321,26 +321,38 @@ nav {
 .page4 .left div {
   width: 60%;
 }
-.page4 .left div h1 {
+.head h1 {
   border-left: 2px solid #5d5d5d;
-  color: #504a45;
-  font-size: 4.5vw;
   font-weight: 400;
   cursor: pointer;
+  font-size: 4.5vw;
+}
+h1 {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+.executable {
+  color: white;
+  padding-left: 2rem;
+}
+.style {
+  color: white;
+  padding-left: 2rem;
+  transition: all ease 0.3s;
 }
 .page4 .left div p {
   color: #fff;
   font-weight: 300;
   margin-top: 1vw;
 }
-.page4 .right {
+.right-img {
   width: 55%;
   height: 100%;
-  background-color: grey;
   border-radius: 25px;
   background-image: url(https://sundown-ivory.vercel.app/page4-3.webp);
   background-size: cover;
   background-position: center;
+  transition: all ease 0.3s;
 }
 
 .footer {
