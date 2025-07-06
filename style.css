@@ -354,25 +354,46 @@ h1 {
   background-position: center;
   transition: all ease 0.3s;
 }
+.PAGE4 {
+  height: 80vh;
+  width: 100%;
+  background-color: #b87210;
+  background-color: #efeae3;
+  padding: 10vw 2vw;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+.swiper-slide {
+  width: 20%;
+  border-left: 2px solid #6e6e6eaa;
+  padding-left: 2vw;
+}
+.swiper-slide p {
+  margin-top: 1.5vw;
+  font-weight: 300;
+  line-height: 1.5vw;
+  font-size: 1vw;
+}
 
 .footer {
   height: 100vh;
   width: 100%;
   position: fixed;
   background-color: black;
-  z-index: 9;
-  height: 60vh;
+  z-index: 10;
+  /* height: 60vh; */
   bottom: 0;
   color: rgb(217, 217, 217);
+  color: rgb(255, 255, 255);
   font-size: 23vw;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
-.footer-div {
-  height: 20vh;
-  width: 100%;
-  background-color: red;
-  position: relative;
-  top: 2rem;
+.footer h1 {
+  color: white;
+  font-size: 23vw;
 }
