@@ -20,9 +20,9 @@ body {
   width: 100%;
 }
 .main {
-  /* background-color: black; */
   z-index: 20;
   position: relative;
+  padding-bottom: 130vh;
 }
 .page1 {
   min-height: 100vh;
@@ -299,8 +299,8 @@ nav {
   transition: all ease 0.5s;
 }
 .page4 {
-  /* height: 100vh; */
-  /* width: 100%; */
+  min-height: 100vh;
+  width: 100%;
   background-color: #efeae3;
   padding: 3vw 2vw;
 }
@@ -355,11 +355,11 @@ h1 {
   transition: all ease 0.3s;
 }
 .PAGE4 {
-  height: 80vh;
+  min-height: 80vh;
   width: 100%;
-  background-color: #b87210;
   background-color: #efeae3;
   padding: 10vw 2vw;
+  border-bottom: 2px solid #6e6e6eaa;
 }
 .swiper {
   width: 100%;
@@ -379,21 +379,84 @@ h1 {
 }
 
 .footer {
+  position: fixed;
   height: 100vh;
   width: 100%;
-  position: fixed;
-  background-color: black;
-  z-index: 10;
-  /* height: 60vh; */
+  background-color: #efeae3;
+  z-index: 9;
   bottom: 0;
-  color: rgb(217, 217, 217);
-  color: rgb(255, 255, 255);
-  font-size: 23vw;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  color: #fff;
+  font-weight: 300;
 }
-.footer h1 {
-  color: white;
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5vw 4vw;
+  padding: 5vw;
+  position: absolute;
+  top: 0;
+  color: rgb(0, 0, 0);
+}
+.task {
+  font-size: 1.2vw;
+}
+.info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info p {
+  font-size: 1.5vw;
+}
+.info input {
+  border: hidden;
+  border-bottom: 1px solid grey;
+  background-color: transparent;
+  font-size: 1.5vw;
+  font-weight: 300;
+  width: 100%;
+  color: grey;
+}
+.sun {
   font-size: 23vw;
+  color: #efeae3;
+  position: absolute;
+  bottom: 7.2vw;
+  line-height: 20vw;
+}
+.bottem {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 4vw);
+  padding: 2vw 2vw;
+  font-size: 1.2vw;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid grey;
+  color: rgb(0, 0, 0);
+}
+.circle {
+  height: 20vw;
+  width: 40vw;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  bottom: 0%;
+  left: 0%;
+  background-color: #ff2a00;
+  z-index: -1;
+  animation: circle 8s linear infinite;
+}
+@keyframes circle {
+  0% {
+    transform: translate(-100%, 00%);
+  }
+  100% {
+    transform: translate(300%, 00%);
+  }
 }
