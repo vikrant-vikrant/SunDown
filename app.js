@@ -63,6 +63,13 @@ function swiperAnimation() {
     },
   });
 }
+function loader() {
+  let loader = document.querySelector(".loader");
+  setTimeout(function () {
+    loader.style.top = "-100%";
+  }, 4000);
+}
+loader();
 swiperAnimation();
 let menu = document.querySelector("nav h3");
 let fullScu = document.querySelector(".full-scr");
@@ -73,7 +80,7 @@ menu.addEventListener("click", function () {
     fullScu.style.top = 0;
     navimg.style.opacity = 0;
     int = 1;
-  }else{
+  } else {
     fullScu.style.top = "-100%";
     navimg.style.opacity = 1;
     int = 0;
