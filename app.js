@@ -64,3 +64,18 @@ function swiperAnimation() {
   });
 }
 swiperAnimation();
+let menu = document.querySelector("nav h3");
+let fullScu = document.querySelector(".full-scr");
+let navimg = document.querySelector("nav img");
+let int = 0;
+menu.addEventListener("click", function () {
+  if (int == 0) {
+    fullScu.style.top = 0;
+    navimg.style.opacity = 0;
+    int = 1;
+  }else{
+    fullScu.style.top = "-100%";
+    navimg.style.opacity = 1;
+    int = 0;
+  }
+});
