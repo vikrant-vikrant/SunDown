@@ -18,6 +18,24 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+}
+.div{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:#fe320a;
+  position: absolute;
+  z-index: 100;
+}
+.div::after{
+  inset: 10px;
+  background-color:#fe320a;
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  opacity: .4;
+  filter: blur(55px);
 }
 .main {
   z-index: 20;

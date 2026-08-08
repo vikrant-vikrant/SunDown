@@ -1,3 +1,14 @@
+  let div = document.querySelector(".div");
+  window.addEventListener("mousemove",(e)=>{
+    let x = e.pageX + 20;
+    let y = e.pageY + 20;
+    div.style.transform= `translate(${x}px,${y}px)`;
+    div.style.opacity = 1;
+  })
+  window.addEventListener("mouseout",(e)=>{
+    div.style.opacity = 0;
+  })
+  
 const scroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
   smooth: true,
